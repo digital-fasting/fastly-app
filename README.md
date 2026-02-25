@@ -4,7 +4,9 @@
 
 In a world of endless notifications and infinite scroll, your attention is the most valuable thing you have. Fastly helps you take it back — one intentional fast at a time.
 
-![Fastly app — digital fasting made simple](assets/screenshot/yourscreenshot.png)
+<img src="assets/screenshot/yourscreenshot.png" 
+     alt="Fastly app — digital fasting made simple" 
+     width="30%" />
 
 **How it works**
 - **Pick your trigger** — News, social media, gossip, or create your own. No judgment, just clarity.
