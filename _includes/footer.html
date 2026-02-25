@@ -1,7 +1,4 @@
 <footer>
-	{% if site.your_name %}
-	<p class="footerText">Made by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} in {{ site.your_city }}{% endif %}</p>
-	{% endif %}
 	<div class="footerIcons">
 
 		{% if site.linkedin_username %}
@@ -78,8 +75,13 @@
 
 	</div>
 	<div class="footerLinks">
+		<a href="https://github.com/digital-fasting/fasty-app/issues" target="_blank" rel="noopener">Support</a>
+		<a href="{{ '/public/privacy.html' | relative_url }}" target="_self">Privacy Policy</a>
+		<a href="{{ '/public/terms.html' | relative_url }}" target="_self">Terms and Conditions</a>
 		{% for page in site.pages %}
+			{% if page.title != "What's New" and page.title != "Privacy Policy" and page.title != "Terms and Conditions" %}
 			<a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+			{% endif %}
 		{% endfor %}
 		{% if site.presskit_download_link %}
 			<a href="{{ site.presskit_download_link }}">Press Kit</a>

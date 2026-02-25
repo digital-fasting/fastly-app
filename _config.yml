@@ -1,114 +1,99 @@
 #page title
-page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
+page_title                                : Fastly — Digital fasting made simple
 
 # App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
-ios_app_country                           : us                                        # Required outside USA. Enter 2 letter country code as in https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+ios_app_id                                : 1234793120
+ios_app_country                           : us
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    : https://emilbaehr.com                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
-                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+appstore_link                             :
+playstore_link                            :
+presskit_download_link                    :
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_icon                                  : /assets/AppIcon.png
+app_name                                  : Fastly
+app_price                                 :
+app_description                           : Reclaim your attention. Calm your mind. Fastly makes digital fasting effortless.
 
-enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
-
-
+enable_smart_app_banner                   : true
 
 # Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
-linkedin_username                         :                                           
-linkedin_company                          :                                           
-facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
+your_name                                 : Built with intention
+your_link                                 :
+your_city                                 :
+email_address                             :
+linkedin_username                         :
+linkedin_company                          :
+facebook_username                         :
+instagram_username                        :
+twitter_username                          :
+github_username                           :
 youtube_username                          :
-mastodon_link                             : https://mastodon.social/@ebaehr
+mastodon_link                             :
 
-
-
-# Feature List                            Edit, add or remove features to be presented.
+# Feature List — Fastly key features
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
-    
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
+  - title                                 : Live countdown timer
+    description                           : Always know how far you've come and how much is left. Your commitment, always in view.
+    fontawesome_icon_name                 : stopwatch
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
+  - title                                 : Home & Lock Screen widgets
+    description                           : Glance at your fast without even unlocking your phone. Add the widget and stay accountable.
+    fontawesome_icon_name                 : mobile-alt
 
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
+  - title                                 : Custom triggers
+    description                           : Pick from built-in triggers (news, social media, gossip) or create your own with a personal icon and color.
+    fontawesome_icon_name                 : sliders-h
 
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
+  - title                                 : Streaks & history
+    description                           : See your patterns, celebrate your wins, and track total fasting hours and completion rates.
+    fontawesome_icon_name                 : chart-line
 
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
+  - title                                 : Milestone celebrations
+    description                           : Confetti and badges when you hit key checkpoints. Fastly turns discipline into visible progress.
+    fontawesome_icon_name                 : trophy
 
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
+  - title                                 : Scheduled fasts
+    description                           : Plan fasts in advance so you never miss a beat. From 1 hour to a full week.
+    fontawesome_icon_name                 : calendar-alt
 
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
+  - title                                 : Break tracking
+    description                           : If you break a fast, log the reason and restart stronger. No guilt — just clarity.
+    fontawesome_icon_name                 : undo
 
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
+  - title                                 : iCloud sync
+    description                           : Your fasts follow you across all your Apple devices. Notifications and gentle check-ins keep you on track.
+    fontawesome_icon_name                 : cloud
 
-
-
-# Theme Settings
-topbar_color                              : "#000000"
-topbar_transparency                       : 0.1
+# Theme Settings — Dark theme to match Fastly app
+topbar_color                              : "#0d1117"
+topbar_transparency                       : 0.85
 topbar_title_color                        : "#ffffff"
 
-cover_image                               : assets/headerimage.png                    # Replace with alternative image path or image URL.
-cover_overlay_color                       : "#363b3d"
-cover_overlay_transparency                : 0.8
+cover_image                               : assets/headerimage.png
+cover_overlay_color                       : "#1A3A5C"
+cover_overlay_transparency                : 0.92
 
-device_color                              : black                                     # Set to: blue, black, yellow, coral or white.
+device_color                              : black
 
-body_background_color                     : "#ffffff"
+body_background_color                     : "#121318"
 
-link_color                                : "#1d63ea"
+link_color                                : "#0094FF"
 
 app_title_color                           : "#ffffff"
-app_price_color                           : "#ffffff"
-app_description_color                     : "#ffffff"
+app_price_color                           : "#e5e7eb"
+app_description_color                     : "#d1d5db"
 
-feature_title_color                       : "#000000"
-feature_text_color                        : "#666666"
+feature_title_color                       : "#f9fafb"
+feature_text_color                        : "#9ca3af"
 
-feature_icons_foreground_color            : "#1d63ea"
-feature_icons_background_color            : "#e6e6e6"
+feature_icons_foreground_color            : "#0094FF"
+feature_icons_background_color            : "#1e293b"
 
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
+social_icons_foreground_color             : "#9ca3af"
+social_icons_background_color             : "#1e293b"
 
-footer_text_color                         : "#666666"
+footer_text_color                         : "#6b7280"
 
 
 

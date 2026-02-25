@@ -1,18 +1,10 @@
-.imageWrapper {					// Sets the background image in the header area
+.imageWrapper {					// Hero: single gradient background (no image)
 	height: 714px;
-	background: 
-		linear-gradient(
-		rgba($image-overlay-color, $image-overlay-transparency), 
-		rgba($image-overlay-color, $image-overlay-transparency)
-		   ),
-		
-		url($header-image);
-
+	background: linear-gradient(180deg, #16213e 0%, #1f3460 35%, #2d1b4e 70%, #4A1942 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 	border-radius: 0px 0px 40px 40px;
-
 }
 
 .headerBackground {
@@ -126,11 +118,31 @@ header {
 	
 } 
 
-.headerIcon {
+// Wrapper for app icon so rotation doesn't get clipped
+.appIconClip {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.appIconClip--header {
 	width: 50px;
 	height: 50px;
 	-webkit-clip-path: url(#shape);
 	clip-path: url(#shape);
+}
+.appIconClip--large {
+	width: 120px;
+	height: 120px;
+	-webkit-clip-path: url(#shape120);
+	clip-path: url(#shape120);
+}
+
+.headerIcon {
+	width: 50px;
+	height: 50px;
+	transform: rotate(-90deg);
+	flex-shrink: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -267,8 +279,9 @@ nav > ul li a:active {
 .appIconLarge {
 	width: 120px;
 	height: 120px;
-	-webkit-clip-path: url(#shape120);
-	clip-path: url(#shape120);
+	transform: rotate(-90deg);
+	object-fit: cover;
+	flex-shrink: 0;
 }
 
 .appNamePriceContainer {

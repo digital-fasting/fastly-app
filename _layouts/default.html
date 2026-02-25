@@ -35,7 +35,9 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <img class="appIconLarge" src="{{ site.app_icon | relative_url }}">
+                            <div class="appIconClip appIconClip--large">
+                                <img class="appIconLarge" src="{% if site.app_icon %}{{ site.app_icon | relative_url }}{% endif %}" alt="{{ site.app_name }}">
+                            </div>
                         </div>
                         <div class="appNamePriceContainer">
                             <h1 class="appName">

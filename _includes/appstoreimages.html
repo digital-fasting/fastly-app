@@ -15,8 +15,10 @@ $(function() {
             console.info("Image strings loaded from Apple API.");
             var appInfo = json.results[0];
 
-            // Set favicon
-            $('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
+            // Set favicon only if not already set (custom app_icon in _config.yml)
+            if (!$('link[rel="shortcut icon"]').attr('href')) {
+                $('link[rel="shortcut icon"]').attr("href", appInfo.artworkUrl512);
+            }
 
             // Set page title using the iOS app ID if it is not set manually in _config.yml
             var $pageTitle = $(".pageTitle");
@@ -24,16 +26,16 @@ $(function() {
                 $($pageTitle).html(appInfo.trackName);
             }
 
-            // Set large app icon using the iOS app ID if it is not set manually in _config.yml
+            // Set large app icon only if not already set (custom app_icon in _config.yml)
             var $appIconLarge = $(".appIconLarge");
             if (!$appIconLarge.attr('src')) {
-                $($appIconLarge).attr("src", appInfo.artworkUrl512);
+                $appIconLarge.attr("src", appInfo.artworkUrl512);
             }
 
-            // Set header app icon using the iOS app ID if it is not set manually in _config.yml
+            // Set header app icon only if not already set (custom app_icon in _config.yml)
             var $appIconHeader = $(".headerIcon");
             if (!$appIconHeader.attr('src')) {
-                $($appIconHeader).attr("src", appInfo.artworkUrl512);
+                $appIconHeader.attr("src", appInfo.artworkUrl512);
             }
 
             // Set app name using the iOS app ID if it is not set manually in _config.yml
