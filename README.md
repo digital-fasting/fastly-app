@@ -18,4 +18,4 @@ Whether you’re stepping back from the 24-hour news cycle, cutting out social d
 
 **Reclaim your attention. Feel the difference.**
 
-[Get support & feedback](https://github.com/digital-fasting/fasty-app/issues)
+[Get support & feedback](https://github.com/digital-fasting/fastly-app/issues/new)
