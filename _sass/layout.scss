@@ -626,6 +626,79 @@ footer {
 	justify-content: center;
 }
 
+// Prominent support section
+.supportSection {
+	flex: 0 0 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 60px 20px 50px;
+	margin-top: 80px;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.supportIcon {
+	font-size: 3.2rem;
+	color: $feature-icons-foreground-color;
+	margin-bottom: 18px;
+}
+
+.supportTitle {
+	color: #f9fafb;
+	font-size: 2.6rem;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.supportDescription {
+	color: $footer-text-color;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	max-width: 420px;
+	margin-bottom: 28px;
+}
+
+.supportButton {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background-color: $feature-icons-foreground-color;
+	color: #fff !important;
+	font-size: 1.7rem;
+	font-weight: 600;
+	padding: 14px 32px;
+	border-radius: 12px;
+	text-decoration: none !important;
+	transition: opacity 0.2s ease, transform 0.2s ease;
+
+	&:hover {
+		opacity: 0.88;
+		transform: translateY(-1px);
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+.supportEmail {
+	color: $footer-text-color;
+	font-size: 1.4rem;
+	margin-top: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+	.supportSection {
+		padding: 48px 16px 40px;
+		margin-top: 60px;
+	}
+
+	.supportTitle {
+		font-size: 2.2rem;
+	}
+}
+
 .footerText {
 	color: $footer-text-color;
 	display: block;
