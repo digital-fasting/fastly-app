@@ -1,5 +1,10 @@
 #page title
+title                                     : Fastly — Digital fasting made simple
 page_title                                : Fastly — Digital fasting made simple
+tagline                                   : Digital fasting made simple
+description                               : Reclaim your attention. Calm your mind. Fastly makes digital fasting effortless — with timers, widgets, streaks, and more.
+locale                                    : en_US
+logo                                      : /assets/AppIcon.png
 
 # App Info
 ios_app_id                                : 6759554958
@@ -111,6 +116,13 @@ footer_text_color                         : "#6b7280"
 ### Jekyll Configuration. No need to touch this. ###
 ####################################################
 
+url: "https://digital-fasting.github.io"
+baseurl: "/fastly-app"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 # Set the Sass partials directory, as we're using @imports
 sass:
   style: compressed
@@ -122,6 +134,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - AGENTS.md
+  - MyApp.md
 
 collections:
   pages:
